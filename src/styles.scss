@@ -1,0 +1,235 @@
+@import "./partials";
+
+//global
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+//nav
+.nav__container {
+  background-color: $base-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav__container--heading {
+  letter-spacing: 0.3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+  margin-left: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.nav__container--list {
+  font-size: 1.3rem;
+  margin-right: 2.5rem;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+//hero
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/thought-catalog-bj8U389A9N8-unsplash.jpg);
+  height: 45vh;
+}
+
+.hero--box {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(163, 162, 162);
+  width: 35rem;
+  height: 15rem;
+  position: relative;
+  padding: 1rem;
+  top: 2rem;
+  left: 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.41);
+}
+
+.hero--header {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+.hero--description {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+//list
+
+.main {
+  display: flex;
+  overflow: scroll;
+  align-self: center;
+  text-align: center;
+
+  &__list--item {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.coin__logo {
+  height: 11rem;
+  margin-bottom: 1rem;
+}
+
+.main__list {
+  height: 35vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+//footer
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: $base-color;
+  padding: 0 2rem 0 2rem;
+
+  &__links {
+    color: white;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  &__icons {
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+  }
+}
+
+//coins-page
+
+.about__section--text {
+  padding: 1rem;
+  font-size: 1rem;
+  overflow: scroll;
+  height: 20rem;
+}
+
+.about__section--text::-webkit-scrollbar {
+  display: none;
+}
+.coin {
+  width: 50%;
+}
+
+.coin__logo--about {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.about__section {
+  height: 80vh;
+  line-height: 1.5rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.about__section::-webkit-scrollbar {
+  display: none;
+}
+
+.coin__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//about
+.hero__about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./assets/andre-francois-mckenzie-iGYiBhdNTpE-unsplash.jpg);
+  height: 80vh;
+  // display: flex;
+}
+
+.hero__about--header {
+  letter-spacing: 0.3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+  margin-left: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-left: 2.5rem;
+  padding-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.hero__about--description {
+  color: white;
+}
+
+.about__me {
+  display: flex;
+  margin-left: 40rem;
+  margin-bottom: 35rem;
+}
+
+.about__me--info {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.about__me--anthony {
+  margin-left: 2rem;
+}
+
+.fmAvatar {
+  width: 50%;
+  height: 50%;
+}
+
+.agAvatar {
+  width: 50%;
+  height: 50%;
+}
